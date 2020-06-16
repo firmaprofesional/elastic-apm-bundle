@@ -18,17 +18,12 @@
     },
     "require": {
         "php": ">=7.1",
-        "nipwaayoni/elastic-apm-php-agent": "~7.0"
+        "nipwaayoni/elastic-apm-php-agent": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.2",
         "roave/security-advisories": "dev-master",
         "symfony/phpunit-bridge": "*"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        }
     },
     "config": {
         "sort-packages": true
