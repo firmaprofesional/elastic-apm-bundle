@@ -1,10 +1,10 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\EventListener;
+namespace FP\ElasticApmBundle\EventListener;
 
-use Goksagun\ElasticApmBundle\Apm\ElasticApmAwareInterface;
-use Goksagun\ElasticApmBundle\Apm\ElasticApmAwareTrait;
-use Goksagun\ElasticApmBundle\Utils\StringHelper;
+use FP\ElasticApmBundle\Apm\ElasticApmAwareInterface;
+use FP\ElasticApmBundle\Apm\ElasticApmAwareTrait;
+use FP\ElasticApmBundle\Utils\StringHelper;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;

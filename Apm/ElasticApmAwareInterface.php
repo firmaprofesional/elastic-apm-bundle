@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Apm;
+namespace FP\ElasticApmBundle\Apm;
 
 interface ElasticApmAwareInterface
 {

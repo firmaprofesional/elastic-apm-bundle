@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\DependencyInjection;
+namespace FP\ElasticApmBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -44,6 +44,10 @@ class Configuration implements ConfigurationInterface
                 ->arrayNode('transactions')
                     ->children()
                         ->booleanNode('enabled')->defaultTrue()->end()
+                    ->end()
+                    ->children()
+                        ->arrayNode('exclude')
+                        ->end()
                     ->end()
                 ->end()
             ->end()

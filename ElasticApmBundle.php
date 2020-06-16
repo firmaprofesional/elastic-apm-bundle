@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle;
+namespace FP\ElasticApmBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

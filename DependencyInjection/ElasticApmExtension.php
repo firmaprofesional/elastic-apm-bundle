@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\DependencyInjection;
+namespace FP\ElasticApmBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -27,5 +27,12 @@ class ElasticApmExtension extends Extension
 
         $elasticApmAgentServiceDefinition = $container->getDefinition('elastic_apm.service.agent');
         $elasticApmAgentServiceDefinition->replaceArgument(0, $config);
+
+        $requestListenerDefinition = $container->getDefinition('elastic_apm.listener.request');
+        if ($transactionConfig = $config['transactions']) {
+            if ($transactionConfig['exclude']) {
+                $requestListenerDefinition->addMethodCall('setExclude', [$transactionConfig['exclude']]);
+            }
+        }
     }
 }

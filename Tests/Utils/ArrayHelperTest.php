@@ -1,8 +1,8 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Tests\Utils;
+namespace FP\ElasticApmBundle\Tests\Utils;
 
-use Goksagun\ElasticApmBundle\Utils\ArrayHelper;
+use FP\ElasticApmBundle\Utils\ArrayHelper;
 use PHPUnit\Framework\TestCase;
 
 class ArrayHelperTest extends TestCase

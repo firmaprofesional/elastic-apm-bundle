@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Security;
+namespace FP\ElasticApmBundle\Security;
 
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 

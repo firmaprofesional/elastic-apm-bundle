@@ -1,8 +1,8 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Apm;
+namespace FP\ElasticApmBundle\Apm;
 
-use Goksagun\ElasticApmBundle\Utils\ArrayHelper;
+use FP\ElasticApmBundle\Utils\ArrayHelper;
 use PhilKra\Agent;
 
 class ElasticApmFactory

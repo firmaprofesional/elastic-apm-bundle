@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Utils;
+namespace FP\ElasticApmBundle\Utils;
 
 class StringHelper
 {
@@ -13,7 +13,7 @@ class StringHelper
             return false;
         }
 
-        for ($i = 0; $i < strlen($haystack); $i++) {
+        for ($i = 0, $iMax = strlen($haystack); $i < $iMax; $i++) {
             if ($haystack[$i] != $dash) {
                 if ($haystack[$i] !== $needle[$i]) {
                     return false;

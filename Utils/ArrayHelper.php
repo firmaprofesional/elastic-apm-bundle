@@ -1,6 +1,6 @@
 <?php
 
-namespace Goksagun\ElasticApmBundle\Utils;
+namespace FP\ElasticApmBundle\Utils;
 
 class ArrayHelper
 {

@@ -12,3 +12,8 @@ elastic_apm:
 #    cookies: [] #Cookies to send to the APM Server, empty set sends all. Keys are case sensitive, Default: []
 #    httpClient: [] #Extended GuzzleHttp\Client Default: []
 #    backtraceLimit: unlimited #Depth of a transaction backtrace, Default: unlimited
+#    transactions:
+#       enabled: true or false
+#       exclude: a list of excluded controllers
+#           - web_profiler.controller.profiler::toolbarAction
+#           - web_profiler.controller.profiler::panelAction
