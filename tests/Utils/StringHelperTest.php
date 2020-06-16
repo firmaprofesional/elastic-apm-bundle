@@ -1,8 +1,7 @@
 <?php
 
-namespace FP\ElasticApmBundle\Tests\Utils;
+namespace FP\ElasticApmBundle\Utils;
 
-use FP\ElasticApmBundle\Utils\StringHelper;
 use PHPUnit\Framework\TestCase;
 
 class StringHelperTest extends TestCase

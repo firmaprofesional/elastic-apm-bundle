@@ -2,6 +2,7 @@
 
 namespace FP\ElasticApmBundle\EventListener;
 
+use Exception;
 use FP\ElasticApmBundle\Apm\ElasticApmAwareInterface;
 use FP\ElasticApmBundle\Apm\ElasticApmAwareTrait;
 use FP\ElasticApmBundle\Utils\StringHelper;
@@ -56,7 +57,7 @@ class ApmErrorCaptureListener implements ElasticApmAwareInterface, LoggerAwareIn
 
         try {
             $sent = $this->apm->send();
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $sent = false;
         }
 
