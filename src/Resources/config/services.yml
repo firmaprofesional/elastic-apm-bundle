@@ -41,7 +41,7 @@ services:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException, priority: 32 }
 
     elastic_apm.service.agent:
-        class: PhilKra\Agent
+        class: Nipwaayoni\Agent
         factory: ['FP\ElasticApmBundle\Apm\ElasticApmFactory', 'createAgent']
         arguments:
             - '%elastic_apm%'

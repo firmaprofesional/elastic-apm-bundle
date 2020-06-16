@@ -3,7 +3,7 @@
 namespace FP\ElasticApmBundle\Apm;
 
 use FP\ElasticApmBundle\Utils\ArrayHelper;
-use PhilKra\Agent;
+use Nipwaayoni\Agent;
 
 class ElasticApmFactory
 {
