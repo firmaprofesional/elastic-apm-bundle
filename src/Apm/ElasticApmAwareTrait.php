@@ -2,7 +2,7 @@
 
 namespace FP\ElasticApmBundle\Apm;
 
-use Nipwaayoni\Agent;
+use PhilKra\Agent;
 
 trait ElasticApmAwareTrait
 {

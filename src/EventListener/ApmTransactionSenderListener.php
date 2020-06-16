@@ -8,7 +8,7 @@ use FP\ElasticApmBundle\Apm\ElasticApmAwareTrait;
 use FP\ElasticApmBundle\Security\TokenStorageAwareInterface;
 use FP\ElasticApmBundle\Security\TokenStorageAwareTrait;
 use FP\ElasticApmBundle\Utils\RequestProcessor;
-use Nipwaayoni\Exception\Transaction\UnknownTransactionException;
+use PhilKra\Exception\Transaction\UnknownTransactionException;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Symfony\Component\HttpFoundation\Response;

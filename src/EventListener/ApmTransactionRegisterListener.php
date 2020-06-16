@@ -5,7 +5,7 @@ namespace FP\ElasticApmBundle\EventListener;
 use FP\ElasticApmBundle\Apm\ElasticApmAwareInterface;
 use FP\ElasticApmBundle\Apm\ElasticApmAwareTrait;
 use FP\ElasticApmBundle\Utils\RequestProcessor;
-use Nipwaayoni\Exception\Transaction\DuplicateTransactionNameException;
+use PhilKra\Exception\Transaction\DuplicateTransactionNameException;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
