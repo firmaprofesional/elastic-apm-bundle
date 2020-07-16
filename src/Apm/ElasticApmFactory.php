@@ -3,7 +3,8 @@
 namespace FP\ElasticApmBundle\Apm;
 
 use FP\ElasticApmBundle\Utils\ArrayHelper;
-use Nipwaayoni\Agent;
+use Nipwaayoni\AgentBuilder;
+use Nipwaayoni\Config;
 
 class ElasticApmFactory
 {
@@ -17,6 +18,8 @@ class ElasticApmFactory
             $config['active'] = false;
         }
 
-        return new Agent($config);
+        return (new AgentBuilder())
+            ->withConfig(new Config($config))
+            ->build();
     }
 }
