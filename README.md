@@ -65,9 +65,9 @@ Then, add the bundle configuration yml file `elastic_apm.yml` into
 ```yml
 elastic_apm:
     enabled: true
-    appName: 'raplus' #Name of this application, Required
-    serverUrl: 'https://a59dc3e8594447f388925d220e41230e.apm.eu-west-1.aws.cloud.es.io/' #APM Server Endpoint, Default: 'http://127.0.0.1:8200'
-    secretToken: 'KeZHykP8nsRi8bJ0QH' #Secret token for APM Server, Default: null
+    appName: 'SymfonyApp' #Name of this application, Required
+    serverUrl: 'http://127.0.0.1:8200' #APM Server Endpoint, Default: ''
+    secretToken: 'secret' #Secret token for APM Server, Default: null
     transactions:
         enabled: true
         exclude:
